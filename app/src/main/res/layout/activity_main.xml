@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#323232"
+    >
+
+    <TextView
+        android:id="@+id/TV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number to Words Converter"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="30dp"
+        />
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV1"
+        android:hint="Enter 3 digit Number"
+        android:textColorHint="@android:color/background_light"
+        android:textColor="@android:color/background_light"
+        android:inputType="number"
+        />
+    <Button
+        android:id="@+id/con"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="18dp"
+        android:text="Converter"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/background_light"
+        />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/con"
+        android:layout_marginTop="70dp"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light" />
+
+</RelativeLayout>
